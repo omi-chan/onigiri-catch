@@ -1,0 +1,11 @@
+.DS_Store
+
+/build/
+/dist/
+
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.prof
