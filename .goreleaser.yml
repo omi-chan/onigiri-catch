@@ -7,14 +7,15 @@ builds:
     goarch:
       - amd64
       - 386
+artifactories:
+  - checksum: false
+archive:
+  format: zip
+  name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
 replacements:
   amd64: 64-bit
   386: 32-bit
   darwin: macOS
-checksum: false
-archive:
-  format: zip
-  name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
 release:
   github:
     owner: omi-chan
